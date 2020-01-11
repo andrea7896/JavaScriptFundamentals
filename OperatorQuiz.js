@@ -8,7 +8,7 @@ let y = (x > 5) && (x < 15);
 
 let x = 5; 
 
-x += 3; 
+y += 3; 
 
 // Cual es el valor de Y? 
 

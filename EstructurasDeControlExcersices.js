@@ -12,6 +12,28 @@ function isLandScape (width, height) {
  * No es un numero => 'Not es un numero'
  * 
  */
+function FizzBuzz(number){
+    let mensaje;
+  
+    if(typeof number != "number"){
+        mensaje = "No es un numero"
+        return mensaje;
+    }
+
+    if(((number % 3) == 0) && ((number % 5) == 0)){
+      mensaje = "FizzBuzz"  
+    }else if(((number % 3) == 0)){
+        mensaje = "Fizz"
+    }else if((number % 5) == 0){
+        mensaje = "Buzz"
+    }else{
+        mensaje = "input"
+    }
+
+    return mensaje;
+}
+
+console.log(FizzBuzz(""));
 
  // limite de velocidad
  /**
