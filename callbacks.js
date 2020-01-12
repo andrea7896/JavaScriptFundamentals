@@ -21,11 +21,12 @@ let message = function(){
     alert("The homework has been done!");
 }
 
-function doHomeWork(mes){
-    for(let i=1;i<=100;i++){
+function doHomeWork(mes,amountOfWork){
+    for(let i=1;i<=amountOfWork;i++){
         console.log(i);
     }
     mes();
 }
 
-doHomeWork(message);
+let amountOfWork=10;
+doHomeWork(message,amountOfWork);
