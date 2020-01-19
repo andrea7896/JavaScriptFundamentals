@@ -1,7 +1,7 @@
 // Landscape or Portrait
-function isLandScape (width, height) {
+// function isLandScape (width, height) {
 
-}
+// }
 
 // FizzBuzz algoritmo
 /**
@@ -43,21 +43,21 @@ function isLandScape (width, height) {
   * 12 point -> licencia suspendida
   */
 
-//   function LimiteVelocidad(velocidad){
+  //   function LimiteVelocidad(velocidad){
 
-//     if(velocidad > 70){
-//         let puntosm = Math.floor((velocidad - 70) / 5)
-//         console.log("Tus puntos malos son: ",puntosm);
-//         if(puntosm >=12){
-//             console.log("Tu licencia ha sido suspendida");
-//         }
-//     }else{
-//         console.log("Velocidad normal")
-//     }
-    
-//   }
-
-//   LimiteVelocidad(180);
+  //   if(velocidad > 70){
+  //       let puntosm = Math.floor((velocidad - 70) / 5)
+  //       console.log(puntosm);
+  //       console.log("Tus puntos malos son: ",puntosm);
+  //       if(puntosm >=12){
+  //           console.log("Tu licencia ha sido suspendida");
+  //       }else{
+  //       console.log("Velocidad normal")
+  //   }
+  //  }
+  // } 
+  
+  // LimiteVelocidad(80);
 
 
 
@@ -72,16 +72,16 @@ function isLandScape (width, height) {
    * 2 par
    * 3 non
    */
-  function parNon(numero){
-    for(let i=0; i<=numero ; i++){
-      if((i%2 === 0)){
-        console.log(i,"Es par")
-      }else{
-        console.log(i,"Es non")
-      }
-    }
-  }
-parNon(6);
+//   function parNon(numero){
+//     for(let i=0; i<=numero ; i++){
+//       if((i%2 === 0)){
+//         console.log(i,"Es par")
+//       }else{
+//         console.log(i,"Es non")
+//       }
+//     }
+//   }
+// parNon(6);
 
    // Suma de multiplos de 3  y 5
    /**
@@ -91,29 +91,42 @@ parNon(6);
     *  sum(10) = 33
     */
 
-   function sum(num){
-     //let x=3,y=5;
-     let x = 0;
-     let SumMul=0;
-    while(x<=num){
-      if((x % 3 == 0) || (x % 5 == 0)){
-          SumMul +=  x
-      }
-      x++
+//    function sum(num){
+//      let x = 0;
+//      let SumMul=0;
+//     while(x<=num){
+//       if((x % 3 == 0) || (x % 5 == 0)){
+//           SumMul +=  x
+//       }
+//       x++
+//     }
+//     console.log(SumMul);
+// }
+// sum(10);
+
+//     // Show the stars
+// function showTheStars(num){
+//   let star="";
+//   for(let x=0; x<=num; x++){
+//     console.log(x,star);
+//     star += "*"
+//   }
+// }
+// showTheStars(10)
+
+//print primes
+function printPrimes(limite){
+    for(let i=1;i<limite;i++){
+        let cont=0;
+        for(let x=1;x<limite;x++){
+            if(i % x == 0){
+                cont++      
+                 }
+        }
+        if(cont === 2 ){
+            console.log(i); 
+        }
     }
-    console.log(SumMul);
 }
-sum(10);
 
-    // Show the stars
-function showTheStars(num){
-  let star="";
-  for(let x=0; x<=num; x++){
-    console.log(x,star);
-    star += "*"
-  }
-}
-showTheStars(10);
-
-
-// Print Primes
+printPrimes(10);
