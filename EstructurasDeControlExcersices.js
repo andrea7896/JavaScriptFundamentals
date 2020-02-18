@@ -129,4 +129,4 @@ function printPrimes(limite){
     }
 }
 
-printPrimes(10);
+printPrimes(20);
